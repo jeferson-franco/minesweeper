@@ -1,0 +1,20 @@
+{
+  "name": "minesweeper",
+  "version": "1.0.0",
+  "description": "In the popular **Minesweeper** game you have a board with some mines and those cells that don't contain a mine have a number in it that indicates the total number of mines in the neighboring cells. Starting off with some arrangement of mines we want to create a **Minesweeper** game setup.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeferson-franco/Minesweeper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeferson-franco/Minesweeper/issues"
+  },
+  "homepage": "https://github.com/jeferson-franco/Minesweeper#readme"
+}
