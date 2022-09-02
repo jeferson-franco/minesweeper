@@ -36,3 +36,32 @@ module.exports = solution;
 // npm i jest-cli -g
 // package.json: "scripts": { "test": "jest" }
 // npm test minesweeper
+
+// alternative solution
+// const directions = [
+//     [1, -1],
+//     [1, 0],
+//     [1, 1],
+//     [0, -1],
+//     [0, 1],
+//     [-1, -1],
+//     [-1, 0],
+//     [-1, 1],
+// ];
+// solution = (matrix) =>
+//     matrix.map((row, y) => row.map((col, x) => directions.reduce((count, i) => (count += !!(matrix[y + i[0]] && matrix[y + i[0]][x + i[1]])), 0)));
+
+// alternative solution
+// let dirs = [
+//     { r: -1, c: -1 },
+//     { r: -1, c: 0 },
+//     { r: -1, c: 1 },
+//     { r: 0, c: 1 },
+//     { r: 0, c: -1 },
+//     { r: 1, c: -1 },
+//     { r: 1, c: 0 },
+//     { r: 1, c: 1 },
+// ];
+// function solution(matrix) {
+//     return matrix.map((a, r) => a.map((_, c) => dirs.reduce((p, v) => (p += (matrix[r + v.r] || [])[c + v.c] | 0), 0)));
+// }
